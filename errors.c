@@ -28,7 +28,7 @@ void exit_errors(int type)
 		dprintf(STDERR_FILENO, "L%u: can't pop an empty stack\n", line);
 		break;
 	case PINT_ERR:
-		dprintf(STDERR_FILENO, "L%u: can't pint an empty stack\n", line);
+		dprintf(STDERR_FILENO, "L%u: can't pint, stack empty\n", line);
 		break;
 	case SWAP_ERR:
 		dprintf(STDERR_FILENO, "L%u: can't swap, stack too short\n", line);
