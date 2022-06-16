@@ -1,2 +1,8 @@
 #!/home/michaseyi/alx/monty/monty
-pint
+push 1
+push 2
+pop
+push 3
+pop
+pop
+pchar
