@@ -1,5 +1,14 @@
 #include "monty.h"
 
+
+stack_t *head = NULL;
+char **input = NULL;
+char *mode = "stack";
+size_t size = 0;
+unsigned int line = 0;
+int fd = -1;
+char *filename = NULL;
+
 /**
  * main - Entry point
  * @argc: Number of command line arguments
@@ -12,7 +21,6 @@ int main(int argc, char *argv[])
 	char *buffer = NULL;
 	int length = 0, read_val, can_proceed = 1;
 
-	head = NULL, input = NULL, mode = "stack", size = 0, line = 0;
 	if (argc != 2)
 		exit_errors(USAGE_ERR);
 	filename = argv[1];

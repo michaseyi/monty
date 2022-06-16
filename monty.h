@@ -58,24 +58,24 @@ typedef struct instruction_s
 } instruction_t;
 
 /* Mode of operation */
-char *mode;
+extern char *mode;
 
 /* Line number */
-unsigned int line;
+extern unsigned int line;
 
 /* File fd */
-int fd;
+extern int fd;
 
 /* Linked list head */
-stack_t *head;
+extern stack_t *head;
 
 /* Input val */
-char **input;
+extern char **input;
 
-size_t size;
+extern size_t size;
 
 /* Filename */
-char *filename;
+extern char *filename;
 /* Opcodes */
 void pall(stack_t **stack, unsigned int line_number);
 void push(stack_t **stack, unsigned int line_number);
