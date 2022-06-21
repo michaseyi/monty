@@ -26,6 +26,8 @@ int is_number(char *str)
 {
 	int i = 0;
 
+	if (str[i] == '-' || str[i] == '+')
+		i++;
 	while (str[i])
 	{
 		if (!isdigit(str[i]))

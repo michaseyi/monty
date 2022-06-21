@@ -79,7 +79,7 @@ void exit_errors_2(int type)
 		dprintf(STDERR_FILENO, "L%u: can't mod, stack too short\n", line);
 		break;
 	case PCHAR_ERR:
-		dprintf(STDERR_FILENO, "L%u: can't pchar, stack too short\n", line);
+		dprintf(STDERR_FILENO, "L%u: can't pchar, stack empty\n", line);
 		break;
 	case PCHAR_OUT_OF_RANGE:
 		dprintf(STDERR_FILENO, "L%u: can't pchar, value out of range\n", line);
